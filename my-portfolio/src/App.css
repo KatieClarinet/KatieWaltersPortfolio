@@ -1,6 +1,6 @@
 :root {
   --main-color: #ED2E38;
-  --font: 'Nunito', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -37,10 +37,12 @@
 
 h1 {
   text-align: center;
-  font-size: 10vh;
+  font-size: 12vh;
+  font-weight: 300;
 }
 
 p {
-  font-size: 4vh;
+  font-size: 5vh;
   text-align: center;
+  font-weight: 300;
 }
