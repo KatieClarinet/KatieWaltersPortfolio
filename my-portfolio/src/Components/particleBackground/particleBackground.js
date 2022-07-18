@@ -13,14 +13,17 @@ export default function ParticleBackground() {
     };
 
     return (
-        <div className="particles-js">
+        <>
         
+        <div className="particles-js">
             <Particles 
             id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
                 options={{
     fpsLimit: 60,
+
+    //////////////////////////////////////////////////////
     particles: {
       move: {
         bounce: false,
@@ -31,17 +34,55 @@ export default function ParticleBackground() {
         speed: 2,
         straight: false
       },
-      number: { density: { enable: true, area: 800 }, value: 80 },
-      opacity: {
-        value: 0.5
+
+      tilt: {
+        direction: "random",
+        enable: true,
+        move: true,
+        value: {
+          min: 0,
+          max: 360
+        },
+        animation: {
+          enable: true,
+          speed: 60
+        }
       },
+
+      roll: {
+        darken: {
+          enable: true,
+          value: 5
+        },
+        enable: true,
+        speed: {
+          min: 15,
+          max: 25
+        }
+      },
+
+//higher area number means fewer blobs
+      number: { density: { enable: true, area: 800 }, value: 100 },
+
+
+      opacity: {
+        value: 1
+      },
+
+
       shape: {
         type: "circle"
       },
+
+
       size: {
-        value: { min: 1, max: 5 }
+        value: { min: 1, max: 6 }
       }
+
     },
+
+    ////////////////////////////////////////////////////////////
+
     themes: [
       {
         name: "light",
@@ -51,15 +92,16 @@ export default function ParticleBackground() {
         },
         options: {
           background: {
-            color: "#fff"
+            color: "#8ED1FC"
           },
           particles: {
             color: {
-              value: "#000"
+              value: "#FCDAE0"
             }
           }
         }
       },
+      
       {
         name: "dark",
         default: {
@@ -84,5 +126,6 @@ export default function ParticleBackground() {
 
             />
         </div>
+        </>
     )
 }

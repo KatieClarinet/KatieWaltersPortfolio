@@ -7,7 +7,9 @@ function App() {
   return (
     <div className="App">
       <ParticleBackground />
+      <div className="Home">
       <Home />
+      </div>
     </div>
   );
 }
