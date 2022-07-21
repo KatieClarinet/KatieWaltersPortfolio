@@ -3,7 +3,7 @@ import Navbar from "../Components/Navbar/Navbar";
 export default function About() {
     return (
         <><Navbar /><div>
-            <h2>About</h2>
+            <h1>About</h1>
         </div></>
     );
   }
