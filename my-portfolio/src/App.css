@@ -87,3 +87,8 @@ p {
   gap: 20px;
   margin-top: 40px;
 }
+
+.Projects {
+  height: 500px;
+  background-color: aquamarine;
+}

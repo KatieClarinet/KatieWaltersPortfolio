@@ -1,21 +1,35 @@
 import Navbar from "../Components/Navbar/Navbar";
+import "./projects.css";
+import bookreviews from "../Assets/BookReviews.png";
+import eviechargers from "../Assets/EvieChargers.png"
+import scalespractice from "../Assets/ScalesPractice.png"
+import Book from '../Components/Book/Book.js'
+
 
 export default function Projects() {
+    let bookText = `
 
-    const openInNewTab = url => {
-        window.open(url, '_blank', 'noopener,noreferrer');
-      };
+    I'm an avid reader, and also like to write book
+    reviews.
+
+    I created this simple app where users can
+    search and view my book reviews.
+    `
 
     return (
-    <><Navbar /><div>
-        <h1>Projects</h1>
-            <p onClick={() => openInNewTab('https://majestic-custard-3096f6.netlify.app/')}>
-                Rock Paper Scissors
-            </p>
-      <p onClick={() => openInNewTab('https://polite-cuchufli-be2b53.netlify.app/')}>
-        Ron Swanson Quotes
-      </p>
+        <>
+            <div className="projects">
             
-        </div></>
+                <Navbar />
+                <h1>PROJECTS</h1>
+                <div className="book-container">
+
+                <Book book={bookreviews} link={'https://becksbookreviews.netlify.app/'} text={bookText}/>
+                <Book book={eviechargers}/>
+                <Book book={scalespractice} link={'https://scales-practice.netlify.app/'}/>
+                </div>
+                
+            </div>
+        </>
     );
-  }
+}
