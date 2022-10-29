@@ -1,4 +1,3 @@
-import Navbar from "../Components/Navbar/Navbar";
 import "./projects.css";
 import bookreviews from "../Assets/BookReviews.png";
 import eviechargers from "../Assets/EvieChargers.png"
@@ -18,9 +17,9 @@ export default function Projects() {
 
     return (
         <>
-            <div className="projects">
+            <div id="projects">
             
-                <Navbar />
+         
                 <h1>PROJECTS</h1>
                 <div className="book-container">
 

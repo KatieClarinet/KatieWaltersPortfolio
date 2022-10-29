@@ -1,5 +1,5 @@
 import React from "react";
-import ParticleBackground from '../particleBackground/particleBackground';
+
 
 export default function Book({ book, link, text }) {
     const openInNewTab = (url) => {
@@ -7,12 +7,12 @@ export default function Book({ book, link, text }) {
     };
     return (
         <>
-        <ParticleBackground />
+
         <div className="book-area">
             <div className="book">
                 <div className="back"></div>
                 <div className="page6">
-                    <div className="right-hand-text">{text}</div>
+                    {/* <div className="right-hand-text">{text}</div> */}
                     <div onClick={() => openInNewTab(`${link}`)}>
                         Go to live app
                     </div>
