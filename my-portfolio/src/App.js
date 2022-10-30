@@ -7,18 +7,22 @@ import Navbar from "./Components/Navbar/Navbar";
 function App() {
   
     return (
-        <div className="App" id="app">
-       
-            <Navbar />
-            <ParticleBackground />
-            <div className="Home" id="home">
+            <><Navbar />
+            <div className="App" id="app">
+
+        {/* <div className="container"> */}
+
+          <div className="Home">
             <Home />
-            </div>
-            <div className="projects-section">
+          </div>
+          <div className="projects-section">
 
             <Projects />
-            </div>
-        </div>
+          </div>
+      </div>
+        {/* </div> */}
+        <ParticleBackground />
+      </>
     );
 }
 
