@@ -1,7 +1,5 @@
 import "./projects.css";
-import bookreviews from "../Assets/becks_bookcover.png";
-import eviechargers from "../Assets/evie_bookcover.png"
-import scalespractice from '../Assets/scales_bookcover.png'
+
 
 import Book from '../Components/Book/Book.js'
 
@@ -18,7 +16,12 @@ export default function Projects() {
     let scalesText = `
 
    Some text about the scales app will go here...
+
     `
+    const handleChange = (event) => {
+        // setinstrument(event.target.value);
+        // console.log(event.target)
+    };
 
     return (
         <>
@@ -26,18 +29,18 @@ export default function Projects() {
             
          
                 <h1>PROJECTS</h1>
-                <div className="book-container-outer">
+                <div className="book-container-outer" onClick={handleChange} >
 <div>
 
-                <Book book={bookreviews} link={'https://becksbookreviews.netlify.app/'} title={'Book Reviews'} text={bookText}/>
+                <Book />
 </div>
 <div>
 
-                <Book book={eviechargers} title={'EVie Chargers'} text={scalesText}/>
+                {/* <Book book={eviechargers} title={'EVie Chargers'} text={scalesText}/> */}
 </div>
 <div>
 
-                 <Book book={scalespractice} link={'https://scales-practice.netlify.app/'} title={'Scales Practice'} text={bookText}/>
+                 {/* <Book book={scalespractice} link={'https://scales-practice.netlify.app/'} title={'Scales Practice'} text={bookText}/> */}
 </div>
                 </div>
                 
