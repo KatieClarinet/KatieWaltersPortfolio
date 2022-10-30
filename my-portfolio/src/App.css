@@ -4,7 +4,29 @@
   --pale-pink: #F9C2CC;
   --grey: #A9B8C3;
   font-family: 'Roboto', sans-serif;
+  
+  /* for book */
+  /* colors */
+  --body-bg: #FAFAFA;
+  --page-bg: #F5F5F5;
+  --dark-text: #2A2935;
+/* spacing */
+    /* this is what defines the global scale */
+    --baseline: 10px;
+    
+    /* fonts */
+    --book-title: 'Tulpen One', sans-serif;
+    --title: 'Cormorant Garamond', serif;
+    --body: 'Cormorant Garamond', serif;
+    --base-size: var(--baseline) * 1.2;
+
 }
+
+
+html {
+  scroll-behavior: smooth;
+} 
+
 
 * {
   box-sizing: border-box;
@@ -70,12 +92,21 @@ a:hover {
   display: flex;
   flex-direction: column; 
   /* background-color: #F9C2CC;  */
-  /* width: 100vw; */
-  height: 200vh; 
+  width: 100vw;
+  /* height: 200vh;  */
 } 
+
+
+
+/* .container {
+height: 100%;
+width: 100%;
+background-color: aquamarine;
+} */
 
 .Home {
   display: flex; 
+  flex-direction: column;
   height: 100vh; 
   width: 100%;
   justify-content: center;
@@ -88,25 +119,20 @@ a:hover {
 .projects-section {
   display: flex; 
   flex-direction: column;
-  height: 100vh; 
   width: 100%;
   color: var(--main-red);
    /* background-color: rgb(174, 168, 168); */
   justify-content: center;
-  /* align-items: center; */
+   align-items: center; 
 
  }
 
- #projects {
-   /* background-color: #8ED1FC; */
-  
-   
- }
 
-/* .title {
+
+.title {
   display: flex;
   flex-direction: row;
-} */
+}
 
  h1 {
   text-align: center;
@@ -130,22 +156,6 @@ p {
 
 
 
-html {
-  scroll-behavior: smooth;
-} 
-
-    .book-container {
-      display: flex;
-      flex-direction: row;
-      /* background-color: aqua; */
-      /* justify-content: space-evenly; */
-      /* width: 100vw; */
-     margin-left: 15vw;
-    }
-   
-    
-
-  
 
   
     .book-area {
@@ -159,161 +169,11 @@ html {
       /* background: #ccc; */
     } 
     
-    .book {
-      transform-style: preserve-3d;
-      position: relative;
-      height: 300px;
-      cursor: pointer;
-      backface-visibility: visible;
-    } 
     
-    
-    .front, .back, .page1, .page2, .page3, .page4, .page5, .page6 {
-      transform-style: preserve-3d;
-      position: absolute;
-      width: 200px;
-      height: 100%;
-      top: 0; left: 0;
-      transform-origin: left center;
-      transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
-    }
-    
-    .front, .back {
-      background: pink;
-      border-bottom-right-radius: .5em;
-      border-top-right-radius: .5em;
-  }
-  
-  .front {
-        font-size: 30px;
-        color: #ED2E38;
-       
-      }
-  
-       /* .image-container {
-          height: 100%; 
-          width: 100%;
-          border-radius: 75px;
-          max-height: 100%;
-          background: aqua;
-       }  */
-      
-
-  
-    .bookreviews {
-        width: 95%; 
-    }
-    
-    .front, .page1, .page3, .page5 {
-      border-bottom-right-radius: .5em;
-      border-top-right-radius: .5em;
-    }
-    
-    
-    
-    .back, .page2, .page4, .page6 {
-      border-bottom-right-radius: .5em;
-      border-top-right-radius: .5em;
-    }
-    
-    .page1 { 
-      background: #efefef;
-      
-    }
-    
-    .page2 {
-      background: #efefef;
-      
-    }
-    
-    .page3 {
-      background: #f5f5f5;
-      
-    }
-    
-    .page4 {
-      background: #f5f5f5;
-      
-    }
-    
-    .page5 {
-      background: #fafafa;
-    }
-    
-    .page6 {
-      background: #fdfdfd;
-      font-family: 'Special Elite', cursive;
-    }
-    
-    .book:hover .front {
-      transform: rotateY(-160deg) scale(1.1);
-      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
-    }
-    
-    .book:hover .page1 {
-      transform: rotateY(-150deg) scale(1.1);
-      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
-    }
-    
-    .book:hover .page2 {
-      transform: rotateY(-30deg) scale(1.1);
-      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
-    }
-    
-    .book:hover .page3 {
-      transform: rotateY(-140deg) scale(1.1);
-      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
-    }
-    
-    .book:hover .page4 {
-      transform: rotateY(-40deg) scale(1.1);
-      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
-    }
-    
-    .book:hover .page5 {
-      transform: rotateY(-130deg) scale(1.1);
-      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
-    }
-    
-    .book:hover .page6 {
-      transform: rotateY(-50deg) scale(1.1);
-      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
-    }
-    
-    .book:hover .back {
-      transform: rotateY(-20deg) scale(1.1);
-    }
-    span {
-      display: inline-block;
-      margin: 40px;
-    }
-    .flipH {
-      transform: scale(-1, 1);
-      color: #1c87c9;
-      -moz-transform: scale(-1, 1);
-      -webkit-transform: scale(-1, 1);
-      -o-transform: scale(-1, 1);
-      -ms-transform: scale(-1, 1);
-      transform: scale(-1, 1);
-    }
-  
-    .right-hand-text {
-      margin-top: 40px;
-      white-space: pre-line;
-    }
 
     /* When the browser is less than 600px */
   
     @media screen and (max-width: 600px) {
-
-      .Home {
-        margin-top: 30vh;
-       height: 100vh;
-      }
-
-      .projects-section {
-        margin-top: 40vh;
-      }
 
   h1 {
     font-size: 10vh;
@@ -332,10 +192,6 @@ html {
       .book-container {
           display: flex;
           flex-direction: column;
-          /* width: 100vw; */
-          /* background-color: aqua; */
-         
-          
         }
 
         .book-area {
@@ -345,24 +201,21 @@ html {
           
         }
   
-        .book {
-          transform-style: preserve-3d;
-          position: relative;
-          height: 300px;
-          cursor: pointer;
-          backface-visibility: visible;
-          
-        }
-        
-        .front, .back, .page1, .page2, .page3, .page4, .page5, .page6 {
-          transform-style: preserve-3d;
-          position: absolute;
-          width: 50vw;
-          height: 100%;
-          top: 0; left: 0;
-          transform-origin: left center;
-          transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
-        }
+     
   
   
     } 
+
+    @media screen and (max-width: 600px) {
+
+      :root {
+        --baseline: 7px;
+      }
+    }
+    
+    @media screen and (max-width: 400px) {
+    
+      :root {
+        --baseline: 6px;
+      }
+    }
