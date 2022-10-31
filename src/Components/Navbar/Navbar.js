@@ -1,7 +1,5 @@
 import { useState } from "react";
-import Hamburger from "../Hamburger/hamburger"
-
-
+import Hamburger from "../Hamburger/hamburger";
 
 export default function Navbar() {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -12,21 +10,32 @@ export default function Navbar() {
     };
 
     return (
-    <>
-    <div><nav className="navigation">
-            <a className="link" href="#app">Home</a>
-            <a className="link" href="#projects">Projects</a>
-        </nav><div className="hamburger" onClick={toggleHamburger}>
-                <Hamburger isOpen={hamburgerOpen} />
-            </div>
-            <style>{`
+        <>
+            <div>
+                <nav className="navigation">
+                    <a className="link" href="#app">
+                        Home
+                    </a>
+                    <a className="link" href="#about">
+                        About
+                    </a>
+                    <a className="link" href="#projects">
+                        Projects
+                    </a>
+                </nav>
+                <div className="hamburger" onClick={toggleHamburger}>
+                    <Hamburger isOpen={hamburgerOpen} />
+                </div>
+                <style>{`
                 .navigation {
                     padding-top: 10px;
                     width: 99vw;
+                   margin-top: 0;
                     color: #ED2E38;
                     display: flex;
                     justify-content: flex-end;
                     position: fixed;
+                   top: 0;
                 }
                 .link {
                     padding: 0 5px;
@@ -49,6 +58,8 @@ export default function Navbar() {
                 .hamburger{
                     visibility: ${hamburgerOpen ? "visible" : "hidden"};
                     z-index: 6;
+                    position: fixed;
+                    top: 0;
                     
                 } 
                 @media only screen and (max-width: 900px) {
@@ -88,6 +99,7 @@ export default function Navbar() {
               }
               
             `}</style>
-        </div></>
-    )
-    }
+            </div>
+        </>
+    );
+}
