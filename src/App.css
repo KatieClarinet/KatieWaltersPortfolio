@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+
 :root {
     --main-red: #ed2e38;
     --blue: #8ed1fc;
@@ -15,10 +18,10 @@
     --baseline: 10px;
 
     /* fonts */
-    --book-title: "Tulpen One", sans-serif;
+    --book-title: "Kalam", sans-serif;
     --title: "Cormorant Garamond", serif;
     --body: "Cormorant Garamond", serif;
-    --base-size: var(--baseline) * 1.2;
+    --base-size: var(--baseline) * 1.8;
 }
 
 html {
@@ -133,8 +136,10 @@ a:hover {
 
 .about-right {
     width: 50%;
+    font-size: 4vh;
     /* background-color: #f9c2cc; */
-    padding: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     /* display: flex;
   justify-content: flex-end; */
 }
@@ -225,6 +230,12 @@ p {
       justify-content: center;
   }
 
+  .photo {
+    height: 50vh;
+    
+    border-radius: 70%;
+    align-self: center;
+}
 
     .title {
         display: flex;
