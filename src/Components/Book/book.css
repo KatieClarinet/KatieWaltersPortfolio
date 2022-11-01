@@ -38,6 +38,7 @@
   height: 100%;
   display: flex;
   perspective: 1200px;
+  z-index: -3;
 }
 .book__page {
   position: relative;
