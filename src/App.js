@@ -1,8 +1,8 @@
 import "./App.css";
 import ParticleBackground from "./Components/particleBackground/particleBackground";
-import Home from "./Components/Home/Home";
-import About from "./Components/About/about";
-import Projects from "./Components/Projects/projects";
+import Home from "./Components/Home/Home.js";
+import About from "./Components/About/about.js";
+import Projects from "./Components/Projects/projects.js";
 import NavBar from "./Components/NavBar/navbar.js";
 
 function App() {
