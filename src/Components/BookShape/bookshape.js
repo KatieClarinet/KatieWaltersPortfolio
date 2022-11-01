@@ -65,12 +65,14 @@ const Bookshape = ({ item, stack, live, repo}) => {
             <div class="cover">
                 <div class="book" onClick={update}>
                     <label for="page-1" class="book__page book__page--1">
-                        <img src={item.image} alt="project" />
+                        <img className="project-image" src={item.image} alt="project" />
                     </label>
 
                     <label for="page-2" class="book__page book__page--4">
                         <div class="page__content">
-                            <h1 class="page__content-title">I</h1>
+                           <br></br>
+                           <br></br>
+                           <br></br>
                             <div class="page__content-blockquote">
                                 <p class="page__content-blockquote-text">
                                     {item.text}

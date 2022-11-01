@@ -12,8 +12,10 @@ let info = [
     I'm an avid reader, and also like to write book
     reviews.
 
-    I created this simple app where users can
-    search and view my book reviews.
+    For my first react project I created this simple app where users can
+    search and view my book reviews. 
+
+    All reviews and photos are my own.
     `,
     livelink: 'https://becksbookreviews.netlify.app/',
     repolink: 'https://github.com/KatieClarinet/BookReviews_FrontEnd',

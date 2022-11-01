@@ -1,26 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
-
 :root {
     --main-red: #ed2e38;
     --blue: #8ed1fc;
     --pale-pink: #f9c2cc;
     --grey: #a9b8c3;
-    font-family: "Roboto", sans-serif;
+   --font: "Roboto", sans-serif;
 
     /* for book */
     /* colors */
     --body-bg: #fafafa;
     --page-bg: #f5f5f5;
     --dark-text: #2a2935;
+
     /* spacing */
     /* this is what defines the global scale */
     --baseline: 10px;
 
     /* fonts */
     --book-title: "Kalam", sans-serif;
-    /* --title: "Cormorant Garamond", serif;
-    --body: "Cormorant Garamond", serif; */
     --base-size: var(--baseline) * 1.8;
 }
 
@@ -64,14 +62,17 @@ body {
     /* // removes default disc bullet for li tags and applies margin to left & right side */
     list-style-type: none;
     margin: 0 1rem;
-    color: var(--main-red)
+    color: var(--main-red);
+    font-family: var(--font);
+    font-size: calc(var(--baseline) * 4);
   }
   .navigation-menu li a {
     /* // increases the surface area of the anchor tag to span more than just the anchor text */
     text-decoration: none;
     display: block;
     width: 100%;
-    color: var(--main-red)
+    color: var(--main-red);
+    
   }
 
 
@@ -102,31 +103,6 @@ body {
     background-color: var(--main-red);
   }
   
-/* Navbar  */
-/* .navbar { 
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 30px;
-  margin-right: 30px;
-  margin-top: 20px;
-  cursor: pointer;
-  text-decoration: none;
- color: var(--main-red);
-}
-
-a:link {
-  color: var(--main-red);
-  text-decoration: none;
-}
-
-a:visited {
-  color: var(--main-red);
-}
-
-a:hover {
-  color: var(--pale-pink);
-}  */
 
 /* Particles  */
 .particles-js canvas {
@@ -172,15 +148,12 @@ a:hover {
 
 .About {
     display: flex;
-    /* flex-direction: colu; */
     width: 100%;
     justify-content: center;
-    /* align-items: center;  */
     color: var(--main-red);
     font-family: var(--font);
     /* background-color: #a9b8c3; */
     height: 100vh;
-    /* position: absolute */
 }
 
 .left-right {
@@ -195,46 +168,45 @@ a:hover {
     display: flex;
     justify-content: flex-end;
     /* background-color: aqua; */
-    /* align-items: center; */
-    /* padding: 5%; */
 }
 
 .about-right {
     width: 50%;
     font-size: 4vh;
-    background-color: ;
+    
     padding-left: 5%;
     padding-right: 5%;
-    /* display: flex;
-  justify-content: flex-end; */
+
+}
+
+.pink-box {
+background-color: #f9c2cc;
+height: calc(var(--baseline) * 50);
+border-radius: 30px;
 }
 
 .bio {
-    background-color: #f9c2cc;
-    height: 70vh;
-    width: 30vw;
-    border-radius: 30px;
-    font-size: 2.5vh;
-    padding-left: 2vh;
-    padding-right: 2vh;
+    
+    /* height: 70vh;
+    width: 30vw; */
+    height: calc(var(--baseline) * 50);
+    font-size: calc(var(--baseline) * 2);
+    /* padding-left: 2vh; */
+    /* padding-right: 2vh; */
 }
 
 .photo {
-    height: 70vh;
+  height: calc(var(--baseline) * 50);
     /* width: 37vw; */
     border-radius: 30px;
     align-self: center;
 }
 
 .projects-section {
-    /* display: flex;  */
     flex-direction: column;
-
     color: var(--main-red);
     /* background-color: #A9B8C3; */
     height: 100vh;
-
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -253,6 +225,7 @@ h1 {
     text-align: center;
     font-size: 12vh;
     font-weight: 300;
+    font-family: var(--font);
 }
 
 p {
@@ -271,10 +244,7 @@ p {
 
 .book-area {
     width: 90vw;
-    /* height: 50vh;
-      display: flex; */
     justify-content: space-evenly;
-    /* align-items: center; */
     /* background-color: #ED2E38;  */
     perspective: 1200px;
     /* background: #ccc; */
@@ -293,16 +263,10 @@ p {
   
 }
 
-/* <!-- HTML !--> */
-
 .buttons {
     display: flex;
-    /* width: 30vw; */
-    /* background-color: aqua; */
-    /* justify-content: space-around; */
-    /* margin-top: 3vh; */
 }
-/* CSS */
+
 .button-56 {
   align-items: center;
   background-color: var(--pale-pink);
@@ -365,16 +329,17 @@ p {
 
 @media screen and (max-width: 600px) {
     h1 {
-        font-size: 10vh;
+        font-size: calc(var(--baseline) * 10);
     }
 
     p {
         font-size: 3vh;
     }
 
-    .About {
-        height: 125vh;
+    .projects-section {
+      margin-top: calc(var(--baseline) * 40);
     }
+   
 
     .left-right {
         flex-direction: column;
@@ -389,21 +354,23 @@ p {
       display: flex;
       width: 100%;
       justify-content: center;
-      font-size: 2.5vh;
   }
 
   .photo {
     width: 75vw;
     height: auto;
-    
-    /* border-radius: 70%; */
     align-self: center;
 }
+.pink-box {
+  
+  height: calc(var(--baseline) * 70);
+  
+  }
 
 .bio {
     width: 75vw;
     height: auto;
-    font-size: 2vh;
+    font-size: calc(var(--baseline) * 2.5);
     padding-left: 2vh;
     padding-right: 2vh;
 }

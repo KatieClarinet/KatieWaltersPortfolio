@@ -12,6 +12,8 @@ export default function About() {
                     </div>
                         <br></br>
                     <div className="about-right">
+                    <div className="pink-box">
+
                     <div className='bio'>
 
                         <br></br>
@@ -26,6 +28,7 @@ export default function About() {
                         Based in the West Midlands, I am currently looking for my first role as a Junior Developer.
                         <br></br>  
                                           </div>
+                    </div>
                     </div>
                 </div>
             </div>
