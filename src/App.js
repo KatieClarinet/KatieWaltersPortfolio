@@ -1,15 +1,15 @@
 import "./App.css";
 import ParticleBackground from "./Components/particleBackground/particleBackground";
 import Home from "./Components/Home/Home";
-import About from "./Routes/about";
-import Projects from "./Routes/projects";
-import NewNav from './Components/NewNav/NewNav';
+import About from "./Components/About/about";
+import Projects from "./Components/Projects/projects";
+import NavBar from "./Components/NavBar/navbar";
 
 function App() {
     return (
         <>
             <div className="App" id="app">
-<NewNav />
+                <NavBar />
                 <div className="Home">
                     <Home />
                 </div>

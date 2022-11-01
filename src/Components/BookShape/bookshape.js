@@ -1,13 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import { Icon } from '@iconify/react';
-import flower from '../../Assets/flower.png'
+import { Icon } from "@iconify/react";
+import flower from "../../Assets/flower.png";
 
-const Bookshape = ({ item, stack, live, repo}) => {
+const Bookshape = ({ item, stack, live, repo }) => {
     // const [isRadio, setIsRadio] = useState(false);
     const [click, setClick] = useState(false);
-    
-    console.log(repo)
+
     // const handleChange = (e) => {
     //     console.log(e.currentTarget.value);
 
@@ -20,48 +19,97 @@ const Bookshape = ({ item, stack, live, repo}) => {
         setClick((current) => !current);
     };
 
-
     const renderStack = (stack) =>
-    stack.map((item) => {
-        // console.log(item)
-        return (
-            <>
-            <span class='icon-container'>
- <Icon icon={item.html} color='black' className="icon" /> 
- <Icon icon={item.mui} color='black' className="icon" /> 
- <Icon icon={item.css} color='black' className="icon"/> <br></br>
- <Icon icon={item.react} color='black' className="icon" />
- <Icon icon={item.javascript} color='black' className="icon" /><br></br>
- <Icon icon={item.express} color='black' className="icon"/>
- <Icon icon={item.node} color='black' className="icon" /><br></br>
- <Icon icon={item.postgres} color='black' className="icon" />
- <Icon icon={item.mongodb} color='black' className="icon" />
- <Icon icon={item.postman} color='black' className="icon" /><br></br>
- <Icon icon={item.heroku} color='black' className="icon"/>
- <Icon icon={item.netlify} color='black' className="icon" />
-            </span>
-            </>
-        )
-    });
-
-    const renderLive = () =>  {
-    console.log(live)
-    console.log(repo)
+        stack.map((item) => {
             return (
                 <>
-            <a class="button-56" href={live} target="_blank" rel="noreferrer" >LINK</a>
-            <a class="button-56" href={repo} target="_blank" rel="noreferrer" >REPO</a>
+                    <span class="icon-container">
+                        <Icon icon={item.html} color="black" className="icon" />
+                        <Icon icon={item.mui} color="black" className="icon" />
+                        <Icon
+                            icon={item.css}
+                            color="black"
+                            className="icon"
+                        />{" "}
+                        <br></br>
+                        <Icon
+                            icon={item.react}
+                            color="black"
+                            className="icon"
+                        />
+                        <Icon
+                            icon={item.javascript}
+                            color="black"
+                            className="icon"
+                        />
+                        <br></br>
+                        <Icon
+                            icon={item.express}
+                            color="black"
+                            className="icon"
+                        />
+                        <Icon icon={item.node} color="black" className="icon" />
+                        <br></br>
+                        <Icon
+                            icon={item.postgres}
+                            color="black"
+                            className="icon"
+                        />
+                        <Icon
+                            icon={item.mongodb}
+                            color="black"
+                            className="icon"
+                        />
+                        <Icon
+                            icon={item.postman}
+                            color="black"
+                            className="icon"
+                        />
+                        <br></br>
+                        <Icon
+                            icon={item.heroku}
+                            color="black"
+                            className="icon"
+                        />
+                        <Icon
+                            icon={item.netlify}
+                            color="black"
+                            className="icon"
+                        />
+                    </span>
                 </>
-            )
-    };
-    
+            );
+        });
 
+    const renderLive = () => {
+        console.log(live);
+        console.log(repo);
+        return (
+            <>
+                <a
+                    class="button-56"
+                    href={live}
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    LINK
+                </a>
+                <a
+                    class="button-56"
+                    href={repo}
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    REPO
+                </a>
+            </>
+        );
+    };
 
     return (
         <>
-       
             <br></br>
-            
+
             <div class="cover">
                 <div class="book" onClick={update}>
                     <label for="page-1" class="book__page book__page--1">
@@ -77,7 +125,6 @@ const Bookshape = ({ item, stack, live, repo}) => {
                                 </p>
                                 <p class="page__content-blockquote-text"></p>
                                 <p class="page__content-blockquote-text"></p>
-                                
                             </div>
 
                             {/* <input
@@ -119,7 +166,11 @@ const Bookshape = ({ item, stack, live, repo}) => {
                                     Katie Walters
                                 </h2>
                                 <br></br>
-                                <img src={flower} alt="flower" className="flower"/>                               
+                                <img
+                                    src={flower}
+                                    alt="flower"
+                                    className="flower"
+                                />
                             </div>
                         </div>
                         <div class="book__page-back">
@@ -135,9 +186,7 @@ const Bookshape = ({ item, stack, live, repo}) => {
                     </label>
                 </div>
             </div>
-            <div class='buttons'>
-            {renderLive(live)}
-            </div>
+            <div class="buttons">{renderLive(live)}</div>
             <br></br>
         </>
     );

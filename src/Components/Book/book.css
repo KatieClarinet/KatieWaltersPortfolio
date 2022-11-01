@@ -1,31 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,600|Tulpen+One&display=swap");
-:root {
-  /* colors */
-  /* --body-bg: #FAFAFA;
-  --page-bg: #F5F5F5;
-  --dark-text: #2A2935; */
-  /* spacing */
-  /* this is what defines the global scale */
-  /* --baseline: 12px; */
-  /* fonts */
-  /* --book-title: "Tulpen One", sans-serif;
-  --title: "Cormorant Garamond", serif;
-  --body: "Cormorant Garamond", serif;
-  --base-size: var(--baseline) * 1.2; 
-} */
 
-/* * {
-  box-sizing: border-box;
-} */
-
-/* body {
-  background-color: var(--body-bg);
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} */
 
 .cover {
   width: calc(var(--baseline) * 60);
@@ -186,13 +159,7 @@
   text-align: center;
   color: var(--dark-text);
 }
- /* .book input[type=radio] {
-  display: none;
-}  */
-/* .book input[type=radio]:checked + .book__page {
-  transition: transform 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transform: rotateY(-180deg);
-}  */
+ 
 @media screen and (max-width: 600px) {
 .book__page .page__content-book-title {
   
@@ -200,3 +167,42 @@
   
 }
 }
+
+/* //////////////////?////////// NOT USING /////////////////////// */
+
+/* @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,600|Tulpen+One&display=swap");
+:root {
+  /* colors */
+  /* --body-bg: #FAFAFA;
+  --page-bg: #F5F5F5;
+  --dark-text: #2A2935; */
+  /* spacing */
+  /* this is what defines the global scale */
+  /* --baseline: 12px; */
+  /* fonts */
+  /* --book-title: "Tulpen One", sans-serif;
+  --title: "Cormorant Garamond", serif;
+  --body: "Cormorant Garamond", serif;
+  --base-size: var(--baseline) * 1.2; 
+} */
+
+/* * {
+  box-sizing: border-box;
+} */
+
+/* body {
+  background-color: var(--body-bg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .book input[type=radio] {
+  display: none;
+}  */
+/* .book input[type=radio]:checked + .book__page {
+  transition: transform 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transform: rotateY(-180deg);
+}  */

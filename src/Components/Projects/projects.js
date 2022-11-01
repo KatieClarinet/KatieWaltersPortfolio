@@ -1,4 +1,4 @@
-import Book from "../Components/Book/Book.js";
+import Book from "../Book/Book.js";
 
 export default function Projects() {
     return (

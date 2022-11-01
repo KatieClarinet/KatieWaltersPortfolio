@@ -1,110 +1,52 @@
+import React from "react";
 import { useState } from "react";
-import Hamburger from "../Hamburger/hamburger";
 
-export default function Navbar() {
-    const [hamburgerOpen, setHamburgerOpen] = useState(false);
-
-    const toggleHamburger = () => {
-        setHamburgerOpen(!hamburgerOpen);
-        console.log("clicked");
-    };
+const NewNav = () => {
+    const [isNavExpanded, setIsNavExpanded] = useState(false);
 
     return (
-        <>
-            <div>
-                <nav className="navigation">
-                    <a className="link" href="#app">
-                        Home
-                    </a>
-                    <a className="link" href="#about">
-                        About
-                    </a>
-                    <a className="link" href="#projects">
-                        Projects
-                    </a>
-                </nav>
-                <div className="hamburger" onClick={toggleHamburger}>
-                    <Hamburger isOpen={hamburgerOpen} />
-                </div>
-                <style>{`
-                .navigation {
-                    padding-top: 10px;
-                    width: 99vw;
-                   margin-top: 0;
-                    color: #ED2E38;
-                    display: flex;
-                    justify-content: flex-end;
-                    position: fixed;
-                   top: 0;
+        <nav className="navigation">
+            <button
+                className="hamburger"
+                onClick={() => {
+                    setIsNavExpanded(!isNavExpanded);
+                }}
+            >
+                {/* icon from heroicons.com */}
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="white"
+                >
+                    <path
+                        fillRule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                        clipRule="evenodd"
+                    />
+                </svg>
+            </button>
+            <div
+                className={
+                    isNavExpanded
+                        ? "navigation-menu expanded"
+                        : "navigation-menu"
                 }
-                .link {
-                    padding: 0 5px;
-                    overflow: hidden;
-                    font-size: 1.9vw;
-                    font-family: 'Quicksand', sans-serif;
-                }
-                
-                a:link {
-                    color: #ED2E38;
-                    text-decoration: none;
-                }
-                a:visited {
-                    color: #ED2E38;
-                }
-                a:hover {
-                    color: #F9C2CC;
-                    
-                }
-                .hamburger{
-                    visibility: ${hamburgerOpen ? "visible" : "hidden"};
-                    z-index: 6;
-                    position: fixed;
-                    top: 0;
-                    
-                } 
-                @media only screen and (max-width: 900px) {
-                    .hamburger {
-                    visibility: visible;
-                    display: fixed;
-                      padding-top: 10px;
-                      margin-left: 10px;
-                      z-index: 6;
-                      opacity: 0.9;
-                     
-                  }
-                  .navigation {
-                    display: ${hamburgerOpen ? "flex" : "none"};
-                    flex-direction: column;
-                    background-color: #F9C2CC;
-                    opacity: 0.9;
-                    justify-content: space-around;
-                    align-items: center;
-                    width: 100vw;
-                    position: fixed;
-                    
-                  }
-                  .link {
-                    margin: 2vh;
-                    font-size: 5vw;
-                      
-                  }
-
-                  a:hover {
-                    color: #a9b8c3;
-                    
-                }
-                    }
-                @media only screen and (max-width: 600px) {
-              
-                  .link {
-                    {/* padding: 0.5vh; */}
-                    font-size: 6vw;
-                  }
-                 
-              }
-              
-            `}</style>
+            >
+                <ul>
+                    <li>
+                        <a href="/">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#projects">PROJECT</a>
+                    </li>
+                </ul>
             </div>
-        </>
+        </nav>
     );
-}
+};
+
+export default NewNav;
