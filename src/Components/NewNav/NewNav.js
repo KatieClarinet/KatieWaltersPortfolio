@@ -6,9 +6,7 @@ const NewNav = () => {
 
   return (
     <nav className="navigation">
-      {/* <a href="/" className="brand-name">
-        MacroSoft
-      </a> */}
+     
       <button
         className="hamburger"
         onClick={() => {
@@ -35,13 +33,13 @@ const NewNav = () => {
         }>
         <ul>
           <li>
-            <a href="/">Home</a>    
+            <a href="/">HOME</a>    
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#about">ABOUT</a>
           </li>
           <li>
-            <a href="#projects">Project</a>
+            <a href="#projects">PROJECT</a>
           </li>
         </ul>
       </div>

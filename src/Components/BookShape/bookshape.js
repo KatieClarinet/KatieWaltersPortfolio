@@ -3,11 +3,11 @@ import { useState } from "react";
 import { Icon } from '@iconify/react';
 import flower from '../../Assets/flower.png'
 
-const Bookshape = ({ item, stack }) => {
+const Bookshape = ({ item, stack, live, repo}) => {
     // const [isRadio, setIsRadio] = useState(false);
-console.log(stack)
     const [click, setClick] = useState(false);
-
+    
+    console.log(repo)
     // const handleChange = (e) => {
     //     console.log(e.currentTarget.value);
 
@@ -23,7 +23,7 @@ console.log(stack)
 
     const renderStack = (stack) =>
     stack.map((item) => {
-        console.log(item)
+        // console.log(item)
         return (
             <>
             <span class='icon-container'>
@@ -38,12 +38,23 @@ console.log(stack)
  <Icon icon={item.mongodb} color='black' className="icon" />
  <Icon icon={item.postman} color='black' className="icon" /><br></br>
  <Icon icon={item.heroku} color='black' className="icon"/>
- 
  <Icon icon={item.netlify} color='black' className="icon" />
             </span>
             </>
         )
     });
+
+    const renderLive = () =>  {
+    console.log(live)
+    console.log(repo)
+            return (
+                <>
+            <a class="button-56" href={live} target="_blank" rel="noreferrer" >LINK</a>
+            <a class="button-56" href={repo} target="_blank" rel="noreferrer" >REPO</a>
+                </>
+            )
+    };
+    
 
 
     return (
@@ -123,6 +134,9 @@ console.log(stack)
                         </div>
                     </label>
                 </div>
+            </div>
+            <div class='buttons'>
+            {renderLive(live)}
             </div>
             <br></br>
         </>
