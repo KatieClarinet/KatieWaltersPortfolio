@@ -3,14 +3,13 @@ import ParticleBackground from "./Components/particleBackground/particleBackgrou
 import Home from "./Components/Home/Home";
 import About from "./Routes/about";
 import Projects from "./Routes/projects";
-import Navbar from "./Components/Navbar/Navbar";
+import NewNav from './Components/NewNav/NewNav';
 
 function App() {
     return (
         <>
             <div className="App" id="app">
-                <Navbar />
-
+<NewNav />
                 <div className="Home">
                     <Home />
                 </div>
