@@ -19,8 +19,8 @@
 
     /* fonts */
     --book-title: "Kalam", sans-serif;
-    --title: "Cormorant Garamond", serif;
-    --body: "Cormorant Garamond", serif;
+    /* --title: "Cormorant Garamond", serif;
+    --body: "Cormorant Garamond", serif; */
     --base-size: var(--baseline) * 1.8;
 }
 
@@ -204,6 +204,18 @@ p {
     /* background: #ccc; */
 }
 
+.icon {
+  width: calc(var(--baseline) * 5);
+  height: calc(var(--baseline) * 5);
+  padding-right: calc(var(--baseline) * 0.3);
+  
+}
+
+.flower {
+  width: calc(var(--baseline) * 3);
+  height: calc(var(--baseline) * 3);
+  
+}
 /* When the browser is less than 600px */
 
 @media screen and (max-width: 600px) {
@@ -228,12 +240,13 @@ p {
       display: flex;
       width: 100%;
       justify-content: center;
+      font-size: 2.5vh;
   }
 
   .photo {
     height: 50vh;
     
-    border-radius: 70%;
+    /* border-radius: 70%; */
     align-self: center;
 }
 
@@ -256,12 +269,12 @@ p {
 
 @media screen and (max-width: 600px) {
     :root {
-        --baseline: 7px;
+        --baseline: 6px;
     }
 }
 
 @media screen and (max-width: 400px) {
     :root {
-        --baseline: 6px;
+        --baseline: 5.5px;
     }
 }

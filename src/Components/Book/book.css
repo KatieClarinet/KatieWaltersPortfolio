@@ -140,6 +140,7 @@
   font-size: calc(var(--base-size) * 1);
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: var(--dark-text);
   margin-top: calc(var(--baseline) * 5);
   margin-bottom: calc(var(--baseline) * 3);
 }
@@ -182,6 +183,7 @@
   font-family: var(--title);
   font-size: calc(var(--base-size) * 0.67);
   text-align: center;
+  color: var(--dark-text);
 }
  /* .book input[type=radio] {
   display: none;
@@ -190,3 +192,10 @@
   transition: transform 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
   transform: rotateY(-180deg);
 }  */
+@media screen and (max-width: 600px) {
+.book__page .page__content-book-title {
+  
+  font-size: calc(var(--base-size) * 2.5);
+  
+}
+}
