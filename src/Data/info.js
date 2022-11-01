@@ -15,6 +15,8 @@ let info = [
     I created this simple app where users can
     search and view my book reviews.
     `,
+    livelink: 'https://becksbookreviews.netlify.app/',
+    repolink: 'https://github.com/KatieClarinet/BookReviews_FrontEnd',
     stack: [
         {   html: 'akar-icons:html-fill',
             javascript: 'akar-icons:javascript-fill',
@@ -36,6 +38,8 @@ let info = [
 
     Some words about EVie charger project
     `,
+    livelink: 'https://ev-ie.netlify.app',
+    repolink: 'https://github.com/SchoolOfCode/final-project_front-end-evie',
     stack: [
         {   html: 'akar-icons:html-fill',
             javascript: 'akar-icons:javascript-fill',
@@ -57,6 +61,8 @@ let info = [
 
 Some words about Scales project
 `,
+livelink: 'https://scales-practice.netlify.app/',
+repolink: 'https://github.com/KatieClarinet/MusicalScales_FrontEnd',
 stack: [
     {   html: 'akar-icons:html-fill',
         javascript: 'akar-icons:javascript-fill',
