@@ -4,6 +4,7 @@ import { loadFull } from "tsparticles";
 
 export default function ParticleBackground() {
 
+
     const particlesInit = async (main) => {
         console.log(main);
         await loadFull(main);
@@ -96,7 +97,7 @@ export default function ParticleBackground() {
         },
         options: {
           background: {
-            color: "#8ED1FC"
+            color: '#8ed1fc'
           },
           particles: {
             color: {
