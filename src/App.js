@@ -3,7 +3,7 @@ import ParticleBackground from "./Components/particleBackground/particleBackgrou
 import Home from "./Components/Home/Home.js";
 import About from "./Components/About/about.js";
 import Projects from "./Components/Projects/projects.js";
-import NavBar from "./Components/NavBar/navbar.js";
+import NavBar from "./Components/NavBar/Navbar.js";
 
 function App() {
     return (
