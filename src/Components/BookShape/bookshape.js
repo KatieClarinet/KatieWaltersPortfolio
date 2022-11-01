@@ -1,9 +1,11 @@
 import React from "react";
 import { useState } from "react";
+import { Icon } from '@iconify/react';
+import flower from '../../Assets/flower.png'
 
-const Bookshape = ({ item }) => {
+const Bookshape = ({ item, stack }) => {
     // const [isRadio, setIsRadio] = useState(false);
-
+console.log(stack)
     const [click, setClick] = useState(false);
 
     // const handleChange = (e) => {
@@ -18,13 +20,41 @@ const Bookshape = ({ item }) => {
         setClick((current) => !current);
     };
 
+
+    const renderStack = (stack) =>
+    stack.map((item) => {
+        console.log(item)
+        return (
+            <>
+            <span class='icon-container'>
+ <Icon icon={item.html} color='black' className="icon" /> 
+ <Icon icon={item.mui} color='black' className="icon" /> 
+ <Icon icon={item.css} color='black' className="icon"/> <br></br>
+ <Icon icon={item.react} color='black' className="icon" />
+ <Icon icon={item.javascript} color='black' className="icon" /><br></br>
+ <Icon icon={item.express} color='black' className="icon"/>
+ <Icon icon={item.node} color='black' className="icon" /><br></br>
+ <Icon icon={item.postgres} color='black' className="icon" />
+ <Icon icon={item.mongodb} color='black' className="icon" />
+ <Icon icon={item.postman} color='black' className="icon" /><br></br>
+ <Icon icon={item.heroku} color='black' className="icon"/>
+ 
+ <Icon icon={item.netlify} color='black' className="icon" />
+            </span>
+            </>
+        )
+    });
+
+
     return (
         <>
+       
             <br></br>
+            
             <div class="cover">
                 <div class="book" onClick={update}>
                     <label for="page-1" class="book__page book__page--1">
-                        <img src={item.image} alt="" />
+                        <img src={item.image} alt="project" />
                     </label>
 
                     <label for="page-2" class="book__page book__page--4">
@@ -77,8 +107,8 @@ const Bookshape = ({ item }) => {
                                 <h2 class="page__content-author">
                                     Katie Walters
                                 </h2>
-
-                               
+                                <br></br>
+                                <img src={flower} alt="flower" className="flower"/>                               
                             </div>
                         </div>
                         <div class="book__page-back">
@@ -86,42 +116,7 @@ const Bookshape = ({ item }) => {
                                 <h1 class="page__content-title">
                                     TECHNOLOGIES
                                 </h1>
-                                <img
-                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-                                    alt="html5"
-                                    width="40"
-                                    height="40"
-                                />
-                                <img
-                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-                                    alt="css3"
-                                    width="40"
-                                    height="40"
-                                />
-                                <img
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
-                                    alt="materialui"
-                                    width="40"
-                                    height="40"
-                                />
-                                <img
-                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                                    alt="javascript"
-                                    width="40"
-                                    height="40"
-                                />
-                                <img
-                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-                                    alt="react"
-                                    width="40"
-                                    height="40"
-                                />
-                                <img
-                                    src="https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg"
-                                    alt="netlify"
-                                    width="40"
-                                    height="40"
-                                />
+                                {renderStack(stack)}
 
                                 <div class="page__number">2</div>
                             </div>

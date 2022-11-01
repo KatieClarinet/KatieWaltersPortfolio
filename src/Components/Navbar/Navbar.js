@@ -88,6 +88,11 @@ export default function Navbar() {
                     font-size: 5vw;
                       
                   }
+
+                  a:hover {
+                    color: #a9b8c3;
+                    
+                }
                     }
                 @media only screen and (max-width: 600px) {
               
