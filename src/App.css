@@ -114,7 +114,7 @@ a:hover {
     /* align-items: center;  */
     color: var(--main-red);
     font-family: var(--font);
-    /* background-color: rosybrown; */
+    /* background-color: #a9b8c3; */
     height: 100vh;
     /* position: absolute */
 }
@@ -123,6 +123,7 @@ a:hover {
     display: flex;
     width: 100vw;
     height: 70%;
+   
 }
 
 .about-left {
@@ -137,15 +138,26 @@ a:hover {
 .about-right {
     width: 50%;
     font-size: 4vh;
-    /* background-color: #f9c2cc; */
+    background-color: ;
     padding-left: 5%;
     padding-right: 5%;
     /* display: flex;
   justify-content: flex-end; */
 }
 
+.bio {
+    background-color: #f9c2cc;
+    height: 70vh;
+    width: 30vw;
+    border-radius: 30px;
+    font-size: 2.5vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
 .photo {
     height: 70vh;
+    /* width: 37vw; */
     border-radius: 30px;
     align-self: center;
 }
@@ -227,6 +239,10 @@ p {
         font-size: 3vh;
     }
 
+    .About {
+        height: 125vh;
+    }
+
     .left-right {
         flex-direction: column;
     }
@@ -244,10 +260,19 @@ p {
   }
 
   .photo {
-    height: 50vh;
+    width: 75vw;
+    height: auto;
     
     /* border-radius: 70%; */
     align-self: center;
+}
+
+.bio {
+    width: 75vw;
+    height: auto;
+    font-size: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
 
     .title {
