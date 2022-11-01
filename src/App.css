@@ -113,7 +113,7 @@ body {
  color: var(--main-red);
 }
 
-a:link {
+a:link {   
   color: var(--main-red);
   text-decoration: none;
 }
