@@ -3,9 +3,10 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 // import { useEffect } from "react";
 
-export default function ParticleBackground({ theme }) {
+export default function ParticleBackground({ darkmode }) {
 
-  const color = (theme) => (theme === 'dark' ? '#393E41' : '#8ed1fc');
+  const color = (darkmode) => (darkmode ? '#393E41' : '#8ed1fc');
+  const leaves = (darkmode) => (darkmode ? '#946E83' : '#FCDAE0');
 
     
     const particlesInit = async (main) => {
@@ -30,7 +31,7 @@ export default function ParticleBackground({ theme }) {
                     init={particlesInit}
                     loaded={particlesLoaded}
                     options={{
-                        fpsLimit: 60,
+                        fpsLimit: 90,
 
                         //////////////////////////////////////////////////////
                         particles: {
@@ -100,11 +101,11 @@ export default function ParticleBackground({ theme }) {
                                 },
                                 options: {
                                     background: {
-                                        color: color(theme)
+                                        color: color(darkmode)
                                     },
                                     particles: {
                                         color: {
-                                            value: "#FCDAE0",
+                                            value: leaves(darkmode),
                                         },
                                     },
                                 },
@@ -118,11 +119,11 @@ export default function ParticleBackground({ theme }) {
                                 },
                                 options: {
                                     background: {
-                                        color: color(theme)
+                                        color: color(darkmode)
                                     },
                                     particles: {
                                         color: {
-                                          value: "#D6FFF6",
+                                          value: leaves(darkmode),
                                         },
                                     },
                                 },

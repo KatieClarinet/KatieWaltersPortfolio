@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Icon } from '@iconify/react';
 import flower from '../../Assets/flower.png'
 
-const Bookshape = ({ item, stack, live, repo}) => {
+const Bookshape = ({ item, stack, live, repo, darkmode}) => {
     // const [isRadio, setIsRadio] = useState(false);
     const [click, setClick] = useState(false);
     
@@ -45,12 +45,13 @@ const Bookshape = ({ item, stack, live, repo}) => {
     });
 
     const renderLive = () =>  {
-    console.log(live)
-    console.log(repo)
+    // console.log(live)
+    // console.log(repo)
+    console.log(darkmode)
             return (
                 <>
-            <a class="button-56" href={live} target="_blank" rel="noreferrer" >LINK</a>
-            <a class="button-56" href={repo} target="_blank" rel="noreferrer" >REPO</a>
+            <a className={darkmode ? "button-56-dark" : "button-56"} href={live} target="_blank" rel="noreferrer" >LINK</a>
+            <a className={darkmode ? "button-56-dark" : "button-56"} href={repo} target="_blank" rel="noreferrer" >REPO</a>
                 </>
             )
     };

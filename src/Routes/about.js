@@ -1,6 +1,6 @@
 import Katie from "../Assets/KatieWalters.png";
 
-export default function About() {
+export default function About({darkmode}) {
     return (
         <>
             <div id="about">
@@ -12,7 +12,7 @@ export default function About() {
                     </div>
                         <br></br>
                     <div className="about-right">
-                    <div className="pink-box">
+                    <div className={darkmode ? "dark-box" : "pink-box"}>
 
                     <div className='bio'>
 

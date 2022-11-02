@@ -7,20 +7,20 @@ import NewNav from "./Components/NewNav/NewNav";
 import React, { useState } from "react";
 
 function App() {
-    const [theme, setTheme] = useState("light");
+    const [darkmode, setDarkMode] = useState(false);
 
     return (
         <>
             <div className="App" id="app">
-                <NewNav theme={theme} setTheme={setTheme} />
-                <div className="Home">
-                    <Home />
+                <NewNav darkmode={darkmode} setDarkMode={setDarkMode} />
+                <div className={darkmode ? "Home-Dark" : "Home"}>
+                    <Home darkmode={darkmode} />
                 </div>
-                <div className="About">
-                    <About />
+                <div className={darkmode ? "About-Dark" : "About"}>
+                    <About darkmode={darkmode} />
                 </div>
-                <div className="projects-section">
-                    <Projects />
+                <div className={darkmode ? "Projects-Dark" : "Projects"}>
+                    <Projects  darkmode={darkmode}/>
                 </div>
             </div>
             {/* <ParticleBackground theme={theme} /> */}

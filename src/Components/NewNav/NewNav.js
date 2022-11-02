@@ -5,15 +5,17 @@ import { faMoon } from "@fortawesome/free-solid-svg-icons";
 import { faSun } from "@fortawesome/free-solid-svg-icons";
 import ParticleBackground from '../particleBackground/particleBackground'
 
-const NewNav = ({theme, setTheme}) => {
+const NewNav = ({darkmode, setDarkMode}) => {
     const [isNavExpanded, setIsNavExpanded] = useState(false)
  
     const toggleTheme = () => {
-        if (theme === "light") {
-            setTheme("dark");
-        } else {
-            setTheme("light");
-        }
+      setDarkMode(current => !current)
+        // if (darkmode) {
+        //   setDarkMode("dark");
+        // } 
+        // else {
+        //   setDarkMode("light");
+        // }
     };
 
   return (
@@ -33,7 +35,7 @@ const NewNav = ({theme, setTheme}) => {
       </div>
 
       <button
-        className="hamburger"
+        className={darkmode ? "hamburger-dark" : "hamburger"}
         onClick={() => {
           setIsNavExpanded(!isNavExpanded);
         } }
@@ -52,7 +54,12 @@ const NewNav = ({theme, setTheme}) => {
         </svg>
       </button>
       <div
-        className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
+        // className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
+        className={isNavExpanded ? (darkmode ? "navigation-menu-dark expanded" : "navigation-menu expanded") : !darkmode ? "navigation-menu" : "navigation-menu-dark"}>
+
+        {/* className={darkmode ? (isNavExpanded ? "navigation-menu-dark expanded" : "navigation-menu-dark") : !darkmode ? "navigation-menu expanded" : "navigation-menu"}> */}
+        {/* Dark mode? (isNavExpanded? Dark move expanded : dark mode) : !Darkmode ? expanded : not expanded; */}
+         {/* className={darkmode ? "navigation-menu-dark" : "navigation-menu" && isNavExpanded ? "navigation-menu expanded" : "navigation-menu-dark expanded"}> */}
         <ul>
           <li>
             <a href="/">HOME</a>
@@ -65,7 +72,7 @@ const NewNav = ({theme, setTheme}) => {
           </li>
         </ul>
       </div>
-    </nav><ParticleBackground theme={theme} /></> 
+    </nav><ParticleBackground darkmode={darkmode} /></> 
   );
 }
 
