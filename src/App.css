@@ -42,9 +42,11 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    position: fixed;
+    /* position: fixed; */
     padding: 0.5rem 0rem;
     z-index: 1;
+    /* background-color: var(--blue); */
+
 }
 
 .navigation-menu,
@@ -63,7 +65,7 @@ body {
     margin: 0 1rem;
     color: var(--main-red);
     font-family: var(--font);
-    font-size: calc(var(--baseline) * 4);
+    font-size: calc(var(--baseline) * 2.8);
 }
 .navigation-menu li a {
     /* // increases the surface area of the anchor tag to span more than just the anchor text */
@@ -82,7 +84,7 @@ body {
     margin: 0 1rem;
     color: var(--blue);
     font-family: var(--font);
-    font-size: calc(var(--baseline) * 4);
+    font-size: calc(var(--baseline) * 2.8);
 }
 
 .navigation-menu-dark li a {
@@ -108,10 +110,10 @@ body {
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     /* // positions the icon to the right and center aligns it vertically */
-    position: absolute;
-    top: 50%;
-    right: 25px;
-    transform: translateY(-50%);
+    position: fixed;
+ /* top: 5vh; */
+    right: 5vh; 
+    /* transform: translateY(-50%); */
     display: none;
 }
 
@@ -126,8 +128,8 @@ body {
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     /* // positions the icon to the right and center aligns it vertically */
-    position: absolute;
-    top: 50%;
+    position: fixed;
+    top: 5vh;
     right: 25px;
     transform: translateY(-50%);
     display: none;
@@ -207,6 +209,15 @@ body {
     height: 100vh;
 
 }
+
+/* .contact-form {
+  background-color: #f9c2cc;
+  width: 70vw;
+}
+
+.contact-form-line1 {
+  display: flex;
+} */
 
 .left-right {
     display: flex;
@@ -331,7 +342,7 @@ p {
 .buttons {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .button-56 {
@@ -535,7 +546,7 @@ p {
     }
     .navigation-menu ul {
         /* // navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar) */
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         /* // stacks the li tags vertically  */
@@ -547,7 +558,7 @@ p {
 
     .navigation-menu-dark ul {
         /* // navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar) */
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         /* // stacks the li tags vertically  */
@@ -562,6 +573,7 @@ p {
         /* // centers link text and strips off margin */
         text-align: center;
         margin: 0;
+        font-size: calc(var(--baseline) * 4);
     }
     .navigation-menu li a {
         color: var(--main-red);
