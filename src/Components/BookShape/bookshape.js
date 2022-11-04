@@ -2,7 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { Icon } from '@iconify/react';
 import flower from '../../Assets/flower.png'
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 const Bookshape = ({ item, stack, live, repo, darkmode}) => {
     // const [isRadio, setIsRadio] = useState(false);
     const [click, setClick] = useState(false);
@@ -51,6 +52,7 @@ const Bookshape = ({ item, stack, live, repo, darkmode}) => {
             return (
                 <>
             <a className={darkmode ? "button-56-dark" : "button-56"} href={live} target="_blank" rel="noreferrer" >LINK</a>
+            <br></br>
             <a className={darkmode ? "button-56-dark" : "button-56"} href={repo} target="_blank" rel="noreferrer" >REPO</a>
                 </>
             )
@@ -122,7 +124,9 @@ const Bookshape = ({ item, stack, live, repo, darkmode}) => {
                                     Katie Walters
                                 </h2>
                                 <br></br>
-                                <img src={flower} alt="flower" className="flower"/>                               
+                                <img src={flower} alt="flower" className="flower"/>    
+                                <br></br>
+                                <FontAwesomeIcon icon={faArrowRightLong} className="arrow"/>                  
                             </div>
                         </div>
                         <div class="book__page-back">
