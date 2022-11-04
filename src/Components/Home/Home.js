@@ -1,7 +1,10 @@
 import { Icon } from '@iconify/react';
+import Form from "../Form/Form"
+
 
 export default function Home({darkmode}) {
     const color = (darkmode) => (darkmode ? '#8ed1fc' : "#ed2e38");
+ 
     return(
         <>
         <div>
@@ -21,11 +24,11 @@ export default function Home({darkmode}) {
                 <a href="https://www.linkedin.com/in/katie-walters" target="_blank" rel="noreferrer">
                     <Icon icon="akar-icons:linkedin-box-fill" color={color(darkmode)} width="48" height="48" />
 </a>
-                <a href="mailto:katie_walters@live.co.uk" rel="noreferrer">
-                <Icon icon="fontisto:email" color={color(darkmode)} width="48" height="48" />
-                </a>
+                
+                {/* <Icon icon="fontisto:email" color={color(darkmode)} width="48" height="48" onClick={handleClick}/> */}
+                
+            <Form darkmode={darkmode} />
 </div>
-            
             </>
     )
 }

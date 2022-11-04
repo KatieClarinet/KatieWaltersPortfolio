@@ -84,6 +84,7 @@ export default function ParticleBackground({ darkmode }) {
                             shape: {
                                 type: "circle",
                             },
+                            
 
                             size: {
                                 value: { min: 1, max: 6 },

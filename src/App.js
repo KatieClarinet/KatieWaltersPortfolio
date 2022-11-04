@@ -6,6 +6,7 @@ import Projects from "./Routes/projects";
 import NewNav from "./Components/NewNav/NewNav";
 import React, { useState } from "react";
 
+
 function App() {
     const [darkmode, setDarkMode] = useState(false);
 
@@ -22,6 +23,7 @@ function App() {
                 <div className={darkmode ? "Projects-Dark" : "Projects"}>
                     <Projects  darkmode={darkmode}/>
                 </div>
+                
             </div>
             {/* <ParticleBackground theme={theme} /> */}
         </>

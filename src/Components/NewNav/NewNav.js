@@ -61,14 +61,14 @@ const NewNav = ({darkmode, setDarkMode}) => {
         {/* Dark mode? (isNavExpanded? Dark move expanded : dark mode) : !Darkmode ? expanded : not expanded; */}
          {/* className={darkmode ? "navigation-menu-dark" : "navigation-menu" && isNavExpanded ? "navigation-menu expanded" : "navigation-menu-dark expanded"}> */}
         <ul>
-          <li>
+          {/* <li>
             <a href="#app">HOME</a>
-          </li>
+          </li> */}
           <li>
             <a href="#about">ABOUT</a>
           </li>
           <li>
-            <a href="#projects">PROJECT</a>
+            <a href="#projects">PROJECTS</a>
           </li>
         </ul>
       </div>
