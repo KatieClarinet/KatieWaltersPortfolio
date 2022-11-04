@@ -192,6 +192,25 @@
   text-align: center;
   color: var(--dark-text);
 }
+
+.arrow {
+  animation: slide1 1s ease-in-out infinite;
+  float: right;
+  margin-right: 25px;
+}
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, 0);
+  }
+}
+
+/*  */
+
  /* .book input[type=radio] {
   display: none;
 }  */
@@ -206,3 +225,4 @@
   
 }
 }
+
