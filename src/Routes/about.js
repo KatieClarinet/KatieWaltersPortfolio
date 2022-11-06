@@ -1,4 +1,4 @@
-import Katie from "../Assets/KatieWalters.png";
+import Katie from "../Assets/PortfolioPic.png";
 import redFlower from '../Assets/redflower.png'
 import blueFlower from '../Assets/blueflower.png'
 
