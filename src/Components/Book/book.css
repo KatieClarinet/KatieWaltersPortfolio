@@ -144,7 +144,7 @@
 }
 .book__page .page__content-title {
   font-family: var(--title);
-  font-size: calc(var(--base-size) * 1);
+  font-size: calc(var(--base-size) * 1.8);
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--dark-text);
@@ -224,6 +224,12 @@
   
   font-size: calc(var(--base-size) * 2.5);
   
+}
+.book__page .page__content-blockquote-text {
+  font-size: calc(var(--base-size) * 1.1);
+}
+.book__page .page__content-title {
+  font-size: calc(var(--base-size) * 1.4);
 }
 }
 
