@@ -7,7 +7,7 @@ export default function Projects({darkmode}) {
             <div className={ darkmode? "projects-title-dark" : "projects-title"}>
 
                 <h1 >PROJECTS</h1>
-                Click on each book to read more
+                Click each 📚 to turn the pages
             </div>
 
                 <Book darkmode={darkmode}/>
