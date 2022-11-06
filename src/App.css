@@ -163,7 +163,7 @@ body {
 .App {
     display: flex;
     flex-direction: column;
-    border: solid;
+    /* border: solid; */
     /* border-color: #ed2e38; */
     /* width: 100vw; */
 
