@@ -210,49 +210,41 @@ body {
 
 }
 
-/* .contact-form {
-  background-color: #f9c2cc;
-  width: 70vw;
-}
-
-.contact-form-line1 {
-  display: flex;
-} */
 
 .left-right {
     display: flex;
-    width: 100vw;
+    width: 95vw;
     height: 70%;
-    background-color: #f9c2cc;
+    background-color: rgba(249, 194, 204, 0.86);
+    border-radius: 8px;
 }
 .left-right-dark {
   display: flex;
-  width: 100vw;
+  width: 95vw;
   height: 70%;
-  background-color: #3E6259;
+  background-color: rgba(62, 98, 89, 0.86);
+  border-radius: 8px;
 }
 
 .about-left {
     width: 50%;
     display: flex;
-    /* justify-content: flex-end; */
 /* background-color: aqua; */
     justify-content: center;
     padding: 2vh;
+    /* opacity: 1; */
 }
 
 .about-right {
   width: 50%;
     display: flex;
+    flex-direction: column;
     /* background-color: aqua; */
     justify-content: center;
-    /* align-items: center; */
-    /* padding-left: 5%; */
-    /* padding-right: 5%; */
-    /* border-radius: 30px; */
-    /* height: calc(var(--baseline) * 50); */
-    font-size: calc(var(--baseline) * 2.5);
+align-items: center;
+    font-size: 2.5vh;
     padding: 5vh;
+    text-align: center;
 }
 
 
@@ -261,8 +253,24 @@ body {
     /* height: calc(var(--baseline) * 50); */
     height: 90%;
     /* width: 37vw; */
-    border-radius: 30px;
+    /* border-radius: 30px; */
     align-self: center;
+    /* opacity: 1; */
+    border: 1.5px solid var(--main-red);
+    box-shadow: 8px 10px var(--main-red);
+    border-radius: 8px;
+}
+
+.photo-dark {
+  /* height: calc(var(--baseline) * 50); */
+  height: 90%;
+  /* width: 37vw; */
+  /* border-radius: 30px; */
+  align-self: center;
+  /* opacity: 1; */
+  border: 1.5px solid var(--blue);
+  box-shadow: 8px 10px var(--blue);
+  border-radius: 8px;
 }
 
 .Projects {
@@ -340,6 +348,11 @@ p {
 .flower {
     width: calc(var(--baseline) * 3);
     height: calc(var(--baseline) * 3);
+}
+
+.about-flower {
+  width: calc(var(--baseline) * 2);
+  height: calc(var(--baseline) * 2);
 }
 
 .buttons {
@@ -515,20 +528,22 @@ p {
 
     .about-right {
         display: flex;
+        flex-direction: column;
         width: 100%;
         justify-content: center;
-        text-align: center;
+       
         /* padding-left: 3vw; */
 
         /* font-size: calc(var(--baseline) * 2); */
         padding-left: 10vh;
         padding-right: 10vh;
+        /* overflow: scroll; */
     }
     .About,
     .About-Dark {
         height: auto;
     }
-    .photo {
+    .photo, .photo-dark {
        width: 70vw;
         /* height: auto; */
         align-self: center;
