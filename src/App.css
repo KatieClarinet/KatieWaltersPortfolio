@@ -360,10 +360,10 @@ p {
 .buttons {
     display: flex;
     justify-content: space-between;
-
 }
 
 .button-56 {
+    margin: 1vh;
     align-items: center;
     background-color: var(--pale-pink);
     border: 2px solid var(--main-red);
