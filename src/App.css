@@ -294,11 +294,12 @@ align-items: center;
   .projects-title {
     
     color: var(--main-red);
+    font-size: 2.5vh;
   }
   
   .projects-title-dark {
   color: var(--blue);
-  
+  font-size: 2.5vh;
 }
 
 #projects {
@@ -355,6 +356,7 @@ p {
 .about-flower {
   width: calc(var(--baseline) * 2);
   height: calc(var(--baseline) * 2);
+  margin: 1vh;
 }
 
 .buttons {
@@ -388,6 +390,7 @@ p {
 }
 
 .button-56-dark {
+    margin: 1vh;
     align-items: center;
     background-color: #3e6259;
     border: 2px solid var(--blue);
@@ -545,6 +548,10 @@ p {
     .About-Dark {
         height: auto;
     }
+    .about-flower {
+        width: calc(var(--baseline) * 3);
+        height: calc(var(--baseline) * 3);
+      }
     .photo, .photo-dark {
        width: 70vw;
         /* height: auto; */
