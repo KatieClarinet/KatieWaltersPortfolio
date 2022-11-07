@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# PORTFOLIO
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Title Image](src/Assets/Screenshots/Title_Screenshot.png)
 
-## Available Scripts
+### 👉 [Click here for live demo](https://katiewalters.co.uk/)
 
-In the project directory, you can run:
 
-### `npm start`
+### To install dependencies:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`npm i`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### To start the project:
 
-### `npm test`
+`npm start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Tech stack:
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" alt="materialui" width="40" height="40" />
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
+<img src="https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg" width="40" height="40" />
 
-### `npm run build`
+## PLANNING/INSPIRATION 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ When designing my portfolio, I used Miro to create an inspiration board:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ ![Inspiration 1](src/Assets/Screenshots/Inspiration1.png)
+ ![Inspiration 2](src/Assets/Screenshots/Inspiration2.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## LOW FI WIREFRAME
 
-### `npm run eject`
+From looking at other portfolios, I loved the idea of bold colors, a basic layout, and some animation.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+With this knowledge I created my low fi wireframe:
+ ![Low Fi 1](src/Assets/Screenshots/LowFi1.png)
+  ![Low Fi 2](src/Assets/Screenshots/LowFi2.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## HIGH FI WIREFRAME
 
-## Learn More
+I used Figma to create my initial High Fi wireframe:
+  ![High Fi 1](src/Assets/Screenshots/HighFi1.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🌸 🌸 🌸
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+I was heavily inspired by the 'Diablo Outdoor' website (see Inspiration section above) and took my colour palette from this. I also really liked the pink blossom on their pictures and, combined with my hope to make my page quite simply yet animated, I researched 'CSS Cherry Blossoms'. After experimenting with several Codepens, I came across [TS Particles](https://codepen.io/collection/DPOage).
 
-### Code Splitting
+I couldn't find exactly what I was looking for (always the way!) so initially I got this one in place: [Grey Circles on White Background](https://codepen.io/matteobruni/pen/vYejMNr) then I had great fun playing around with this one: [Rainbow Confetti](https://codepen.io/matteobruni/pen/zYwQVxM) and used some of the confetti styling to tweak the circles into looking more like blossom. (Am aware this wasn't fully successful... but I've made peace with that and like my confetti blobs 💕)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📚 📚 📚
 
-### Analyzing the Bundle Size
+In order to inject some of my personality into my portfolio I had to include a nod towards my love of reading. I woke up at 4am one night (please tell me I'm not the only one this happens to?!) with the sudden idea to display each of the projects 'as a book'.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ I researched various codepens/read some articles, and [this one](https://codepen.io/diemoritat/pen/LKROYZ) was by far my favourite. I then updated the high fi wireframe, and included how it would look on mobile:
+  ![High Fi 3](src/Assets/Screenshots/HighFi3.png)
 
-### Making a Progressive Web App
+## REFLECTION
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+If I were to begin this process again from scratch I would:
+- spend more time on the wireframes. I had a solid vision of the colour pallete and how the title would look, but everything else was trial and error/made up as I went along.
 
-### Advanced Configuration
+If I have time for improvements I will:
+- useContext for dark mode to remove unnecessary prop drilling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
