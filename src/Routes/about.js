@@ -9,7 +9,7 @@ export default function About({darkmode}) {
                 <h1>ABOUT</h1>
                 <div className={ darkmode? "left-right-dark" : "left-right"}>
                     <div className="about-left">
-                        <img src={Katie} alt={Katie} className={ darkmode? "photo-dark" : "photo" }/>
+                        <img src={Katie} alt="Katie" title='Katie' className={ darkmode? "photo-dark" : "photo" }/>
                     </div>
                         
                     <div className="about-right">

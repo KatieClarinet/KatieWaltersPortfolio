@@ -34,6 +34,6 @@ test("text on Home", () => {
     let title = screen.getByRole('heading')
     //ACT - assert the expected result
     expect(title).toHaveTextContent('KATIE WALTERS')
-    expect(screen.getByText('Junior developer based in the West Midlands')).toBeInTheDocument()
+    expect(screen.getByText(`Junior developer based in the <br></br> West Midlands`)).toBeInTheDocument()
     });
 
