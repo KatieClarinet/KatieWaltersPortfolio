@@ -32,8 +32,10 @@ test("text on Home", () => {
     
     //ASSERT - select the elements you want to interact with
     let title = screen.getByRole('heading')
+
     //ACT - assert the expected result
     expect(title).toHaveTextContent('KATIE WALTERS')
-    expect(screen.getByText(`Junior developer based in the <br></br> West Midlands`)).toBeInTheDocument()
+    expect(screen.getByText(`Junior developer based in the`)).toBeInTheDocument();
+    expect(screen.getByText(`West Midlands`)).toBeInTheDocument();
     });
 
