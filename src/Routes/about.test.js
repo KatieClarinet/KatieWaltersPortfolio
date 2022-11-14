@@ -12,7 +12,7 @@ test("image is rendering", () => {
     
     //ASSERT - select the elements you want to interact with
     const image = screen.getByAltText(/Katie/i)
-    const text = screen.getByText()
+    // const text = screen.getByText()
     
     //ACT - assert the expected result
     expect(image).toBeInTheDocument();

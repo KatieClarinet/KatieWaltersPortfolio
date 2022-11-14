@@ -11,9 +11,8 @@ export default function Home({darkmode}) {
 
             <h1 className={ color ? "" : ""}>KATIE WALTERS</h1>
         </div>
-        <p>Junior developer based in the
-                <br></br>
-                West Midlands</p>
+        <p>Junior developer based in the</p>
+        <p>West Midlands</p>
                 <div className='icons'>
                 <a href="https://github.com/KatieClarinet" target="_blank" rel="noreferrer" title="Github">
                     <Icon icon="akar-icons:github-fill" color={color(darkmode)} width="48" height="48" />
